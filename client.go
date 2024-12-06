@@ -22,7 +22,7 @@ var addr = flag.String("addr", "localhost:8080", "http service address")
 
 func main() {
 	flag.Parse()
-	log.SetFlags(0)
+	log.SetFlags(0) // unyo
 
 	interrupt := make(chan os.Signal, 1)
 	signal.Notify(interrupt, os.Interrupt)
